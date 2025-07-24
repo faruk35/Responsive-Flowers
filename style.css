@@ -111,3 +111,20 @@ main .plant h2 {
 .plant-card .plant-content p{
   font-size: 1.4rem;
 }
+/* Flower and Plant section starts from here  */
+.flower-plant-img{
+  max-height: 540px;
+}
+
+.flower-plant-content{
+  max-height: 540px;
+}
+.flower-plant .flower-plant-content h2{
+  padding-left: 20px;
+  font-size: 3.2rem;
+}
+.flower-plant-content ul li{
+  list-style-type: disc;
+  margin: 20px 40px;
+  font-size: 1.4rem;
+}
