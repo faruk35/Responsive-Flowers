@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* font family and className  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+.noto-serif{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+}
+
+/* CSS variables Here  */
+:root {
+  --primary-color: #E95A08;
+  --secondary-color: #8987A1;
+  --bg-color: #fff;
+}
+/* Common CSS Style here  */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.btn {
+  background-color:#E95A08;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover{
+    background-color: #ff8fa3;
+}
+/* Header part starts from here  */
+
+header .logo img{
+    max-width: 71px;
+}
+ul li{
+  list-style: none;
+  padding: 0px 22px;
+}
+ul li a{
+  text-decoration: none;
+  font-size: 1rem;
+}
+ul li:first-child{
+  font-weight: bold;
+}
+li:not(:nth-child(1)){
+  color: var(--secondary-color);
+}
