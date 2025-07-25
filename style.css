@@ -381,9 +381,10 @@ footer{
     margin: auto;
     text-align: center;
   }
-  .colorful h2{
-    font-size: 20px;
-  }
+  .colorful h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
   .colorful form{
     max-width: 90%;
     height: 50px;
@@ -400,5 +401,46 @@ footer{
   .footer-card img{
     margin: 0 20px 0 0;
     padding: 0;
+  }
+  .latest-gallery{
+    flex-direction: column;
+  }
+  .latest-gallery-left{
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .latest-gallery-right{
+    flex-direction: column;
+  }
+  .latest-gallery-right{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .latest-gallery .deal-right-img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .zabo{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .latest-gallery{
+    max-width: 100%;
+  }
+  .latest-gallery-right{
+    max-width: 95%;
+  }
+  .latest-gallery-left{
+    max-width: 100%;
+  }
+  .latest-gallery-left .deal-left-img{
+    max-width: 100%;
+  }
+  .deal{
+    max-width: 100%;
   }
 }
