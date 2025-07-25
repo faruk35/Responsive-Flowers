@@ -82,6 +82,10 @@ nav .cart a{
   color: var(--primary-color);
 }
 /* Plant section starts from here  */
+  .flower-plant-content ul li:first-child{
+    color: var(--secondary-color);
+    font-weight: normal;
+  }
 main .plant h2 {
     font-size: 3.1rem;
     padding-right: 200px;
@@ -353,5 +357,48 @@ footer{
   .flower-plant-content{
     max-width: 100%;
   }
-
+  .flower-plant-content div h2{
+    padding: 0;
+    margin: 0;
+  }
+  .flower-plant-content div ul{
+    padding: 0;
+    margin: 0;
+  }
+  .flower-plant-content ul li{
+    padding: 0;
+    marker: 0;
+  }
+  .flower-plant-content ul li:first-child{
+    color: var(--secondary-color);
+    font-weight: normal;
+  }
+  .latest-deal h2{
+    margin-top: 200px;
+    margin-bottom: 30px;
+  }
+  .latest-deal p{
+    margin: auto;
+    text-align: center;
+  }
+  .colorful h2{
+    font-size: 20px;
+  }
+  .colorful form{
+    max-width: 90%;
+    height: 50px;
+  }
+  .footer-container{
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .footer-card{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .footer-card img{
+    margin: 0 20px 0 0;
+    padding: 0;
+  }
 }
