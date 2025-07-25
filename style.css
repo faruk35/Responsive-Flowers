@@ -165,9 +165,9 @@ main .plant h2 {
 }
 .latest-deal h2{
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    text-align: center;
+    text-align: center !important;
 }
 h2 span{
   color: var(--primary-color);
@@ -181,13 +181,27 @@ h2 span{
 .latest-gallery-left{
   max-width: 30%;
   max-height: auto;
+  margin: 0 auto;
 }
 .latest-gallery-right{
   max-width: 70%;
   max-height: auto;
+  margin-left: 30px;
 }
+.deal-text{
+  color: white;
+  padding-right: 5px;
+  border-right: 2px solid white;
+}
+.deal-otext{
+  color: white;
+  padding-left: 10px;
+}
+.deal-btn{
+  text-decoration: underline;
+  font-size:1rem;
 
-
+}
 .deal{
   background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./assets/deal-bloom.png');
   border-radius: 10px;
@@ -198,13 +212,11 @@ h2 span{
   text-align: center;
   font-size: 1.4rem;
   font-weight: bold;
+  margin-left: 30px;
 }
-.line{
-  width: 2px;
-  height: 10px;
-  background-color: white;
-  margin: 0px 10px;
-  color:white;
+.deal-right-img{
+  margin: 30px auto;
+
 }
 .ana{
   background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./assets/deal-ana.png');
@@ -231,4 +243,75 @@ h2 span{
   overflow: hidden;
   color: white;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+.deal-right-img h2 .deal-text{
+  padding-right: 20px;
+}
+.deal-right-img h2 .deal-otext{
+  padding-left: 20px;
+}
+/* ColorFul section starts from here  */
+.colorful{
+  margin: 20px 0px;
+  width: 100%;
+  height: 530px;
+  background-image: url('./assets/news-letter-bg.png');
+}
+.colorful h2{
+  font-size: 3.1rem;
+}
+.colorful form{
+  width: 830px;
+  margin: 0 auto;
+}
+.colorful form input{
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+}
+.colorful form button{
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/* footer part starts from here  */
+footer{
+  width: 100%;
+  height: 348px;
+}
+.footer-container{
+  margin-top: 50px;
+  height: 248px;
+}
+.footer-card{
+  width: 25%;
+  padding: 20px;
+}
+.footer-logo{
+  margin-bottom: 30px !important;
+}
+.footer-card .footer-logo img{
+    width: 135px;
+    height: 82px;
+}
+.footer-card ul li{
+  color: var(--secondary-color);
+  font-weight: normal;
+  padding: 10px 0px;
+}
+.footer-card img{
+  width: 36px;
+  height: 36px;
+  margin-left: 20px;
+}
+/* Responsive Design Starts from here  */
+
+@media (max-width: 500px) {
+  nav ul li{
+    display: none;
+  }
+  header{
+    margin:20px 20px 0px 10px !important;
+  }
 }
