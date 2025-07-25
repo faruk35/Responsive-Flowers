@@ -120,11 +120,115 @@ main .plant h2 {
   max-height: 540px;
 }
 .flower-plant .flower-plant-content h2{
-  padding-left: 20px;
+  padding-left: 70px;
   font-size: 3.2rem;
 }
 .flower-plant-content ul li{
   list-style-type: disc;
-  margin: 20px 40px;
+  margin: 12px 40px;
   font-size: 1.4rem;
+}
+/* Align Trusted Badge in a right positon  */
+
+.flower-plant{
+  position: relative;
+}
+.flower-plant::after {
+    content: '';
+    position: absolute;
+    top: -22%;
+    left: 32%;
+    width: 286px;
+    height: 286px;
+    background-image: url('./assets/trusted-badge.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    animation: rotation 10s linear infinite;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* Latest Deal starts from here  */
+.latest-gallery{
+  margin: 40px auto !important;
+}
+.latest-grid{
+  margin-top: 30px;
+}
+.latest-deal h2{
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+h2 span{
+  color: var(--primary-color);
+}
+.latest-deal p{
+  max-width: 888px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.latest-gallery-left{
+  max-width: 30%;
+  max-height: auto;
+}
+.latest-gallery-right{
+  max-width: 70%;
+  max-height: auto;
+}
+
+
+.deal{
+  background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./assets/deal-bloom.png');
+  border-radius: 10px;
+  width: 366px;
+  height: 206px;
+}
+.deal-left-img h2{
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.line{
+  width: 2px;
+  height: 10px;
+  background-color: white;
+  margin: 0px 10px;
+  color:white;
+}
+.ana{
+  background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./assets/deal-ana.png');
+  border-radius: 10px;
+  width: 366px;
+  height: 206px;
+}
+.zabo{
+  background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./assets/deal-zabo.png');
+  border-radius: 10px;
+  width: 763px;
+  height: 423px;
+}
+.deal, .ana, .zabo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  overflow: hidden;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
